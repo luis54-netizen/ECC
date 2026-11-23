@@ -1,0 +1,59 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "jarvis",
+      "intents": [
+        {
+          "name": "DomandaIntent",
+          "slots": [{ "name": "domanda", "type": "AMAZON.SearchQuery" }],
+          "samples": [
+            "chiedi {domanda}",
+            "domanda {domanda}",
+            "dimmi {domanda}",
+            "voglio sapere {domanda}",
+            "spiegami {domanda}",
+            "cerca {domanda}"
+          ]
+        },
+        {
+          "name": "PullRequestIntent",
+          "slots": [],
+          "samples": [
+            "quante pull request ho",
+            "quante pull request ci sono",
+            "pull request aperte",
+            "ci sono pull request aperte",
+            "stato delle pull request"
+          ]
+        },
+        {
+          "name": "StatoCIIntent",
+          "slots": [],
+          "samples": [
+            "com'è andata la CI",
+            "stato della CI",
+            "come sono andati i test",
+            "la build è passata",
+            "ultima build"
+          ]
+        },
+        {
+          "name": "CasaIntent",
+          "slots": [{ "name": "comando", "type": "AMAZON.SearchQuery" }],
+          "samples": [
+            "casa {comando}",
+            "in casa {comando}",
+            "comando casa {comando}",
+            "domotica {comando}"
+          ]
+        },
+        { "name": "AMAZON.HelpIntent", "samples": [] },
+        { "name": "AMAZON.StopIntent", "samples": [] },
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
+        { "name": "AMAZON.FallbackIntent", "samples": [] }
+      ],
+      "types": []
+    }
+  }
+}
